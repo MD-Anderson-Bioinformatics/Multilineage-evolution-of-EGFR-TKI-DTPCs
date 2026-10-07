@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f05e91d2231, pid=94705, tid=94718
+#
+# JRE version: OpenJDK Runtime Environment (13.0.2+8) (build 13.0.2+8)
+# Java VM: OpenJDK 64-Bit Server VM (13.0.2+8, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x4231]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x71
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/libexec/abrt-hook-ccpp %s %c %p %u %g %t e %P %I %h" (or dumping to /local/workdir/mt269/analysis_pipeline/data/GSEA_4.1.0/core.94705)
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --module-path=./modules -Xmx4g --add-exports=jide.common/com.jidesoft.grid=org.gsea_msigdb.gsea --add-exports=jide.common/com.jidesoft.docking=org.gsea_msigdb.gsea --add-exports=jide.common/com.jidesoft.status=org.gsea_msigdb.gsea --add-exports=java.desktop/com.sun.java.swing.plaf.windows=jide.common --add-exports=java.desktop/javax.swing.plaf.synth=jide.common --add-exports=java.desktop/sun.swing=jide.common --add-exports=java.desktop/sun.awt=jide.common --add-exports=java.desktop/sun.awt.image=jide.common --add-exports=java.desktop/sun.awt.shell=jide.common --add-exports=java.desktop/sun.awt.dnd=jide.common --add-exports=java.desktop/sun.awt.windows=jide.common --add-exports=java.base/sun.security.action=jide.common --add-exports=java.desktop/com.apple.laf=jide.common --patch-module=jide.common=./lib/jide-components-3.7.4.jar:./lib/jide-dock-3.7.4.jar:./lib/jide-grids-3.7.4.jar -Dapple.laf.useScreenMenuBar=true -Djdk.module.main=org.gsea_msigdb.gsea org.gsea_msigdb.gsea/xapps.gsea.GSEA
+
+Host: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz, 
